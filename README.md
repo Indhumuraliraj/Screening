@@ -390,7 +390,7 @@ Execute the following commands in the Ubuntu terminal.
 ### Xschem
 
 ```bash
-xschem --version
+xschem -version
 ```
 ![Image](https://github.com/Indhumuraliraj/Screening/blob/main/Screenshort/xschme.png)
 ### Ngspice
@@ -425,6 +425,7 @@ echo $PDK_ROOT
 echo $PDK
 ```
 ![Image](https://github.com/Indhumuraliraj/Screening/blob/main/Screenshort/pdk.png)
+
 Check whether the required SKY130 technology files are available.
 
 ## 8.4 Observation
