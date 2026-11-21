@@ -1,6 +1,6 @@
 # Physical Verification – SKY130 PDK
 
-## Repository Structure
+
 
 | Section | Chapter | Title | File |
 |---|---:|---|---|
@@ -143,8 +143,7 @@ sky130A/
 │   ├── netgen/
 │   ├── ngspice/
 │   └── xschem/
-│
-└── ...
+
 ```
 
 The exact contents depend on the PDK version and installation method.
@@ -393,38 +392,39 @@ Execute the following commands in the Ubuntu terminal.
 ```bash
 xschem --version
 ```
-
+![Image]()
 ### Ngspice
 
 ```bash
 ngspice --version
 ```
+![Image]()
 
 ### Magic
 
 ```bash
 magic --version
 ```
-
+![Image]()
 ### Netgen
 
 ```bash
 netgen -batch
 ```
-
+![Image]()
 ### KLayout
 
 ```bash
 klayout -v
 ```
-
+![Image]()
 ## 8.3 PDK Verification
 
 ```bash
 echo $PDK_ROOT
 echo $PDK
 ```
-
+![Image]()
 Check whether the required SKY130 technology files are available.
 
 ## 8.4 Observation
@@ -505,31 +505,20 @@ To verify the electrical functionality of the CMOS inverter before physical layo
 
 ![Xschem Inverter Schematic]()
 
-## 10.3 Netlist Generation
+## 10.3 Symbol by Schematic
+![Xschem Inverter Schematic]()
+## 10.4 Netlist Generation
 
 Generate the SPICE netlist from the completed schematic.
 
 The generated netlist contains the transistor connections, model references and circuit parameters required for simulation.
 
-## 10.4 Simulation Using Ngspice
+## 10.5 Simulation Using Ngspice
 
-Run the generated SPICE netlist using Ngspice.
-
-```bash
-ngspice inverter.spice
-```
-
-Perform transient analysis to observe the input and output waveforms.
-
-Example transient analysis command:
-
-```spice
-.tran 10p 50n
-```
 
 ![Ngspice Simulation Waveform]()
 
-## 10.5 Observation
+## 10.6 Observation
 
 The output waveform should show inverted logic behaviour relative to the input.
 
