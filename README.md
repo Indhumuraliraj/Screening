@@ -2,21 +2,21 @@
 
 
 
-| Section | Chapter | Title | File |
-|---|---:|---|---|
-| THEORY | 01 | Introduction to PDK | [Chapter_01_PDK.md](THEORY/Chapter_01_PDK.md) |
-| THEORY | 02 | SKY130 Overview | [Chapter_02_SKY130.md](THEORY/Chapter_02_SKY130.md) |
-| THEORY | 03 | Why SKY130 | [Chapter_03_Why_SKY130.md](THEORY/Chapter_03_Why_SKY130.md) |
-| THEORY | 04 | Libraries | [Chapter_04_Libraries.md](THEORY/Chapter_04_Libraries.md) |
-| THEORY | 05 | Layers | [Chapter_05_Layers.md](THEORY/Chapter_05_Layers.md) |
-| THEORY | 06 | EDA Tools | [Chapter_06_EDA_Tools.md](THEORY/Chapter_06_EDA_Tools.md) |
-| LAB | 07 | Installation | [Chapter_07_Installation.md](LAB/Chapter_07_Installation.md) |
-| LAB | 08 | Tool Verification | [Chapter_08_Tool_Verification.md](LAB/Chapter_08_Tool_Verification.md) |
-| LAB | 09 | Inverter | [Chapter_09_Inverter.md](LAB/Chapter_09_Inverter.md) |
-| LAB | 10 | Pre-Layout | [Chapter_10_Pre_Layout.md](LAB/Chapter_10_Pre_Layout.md) |
-| LAB | 11 | Magic Layout | [Chapter_11_Magic_Layout.md](LAB/Chapter_11_Magic_Layout.md) |
-| LAB | 12 | DRC | [Chapter_12_DRC.md](LAB/Chapter_12_DRC.md) |
-| LAB | 13 | LVS | [Chapter_13_LVS.md](LAB/Chapter_13_LVS.md) |
+| Chapter | Title | File |
+|---:|---|---|
+| 01 | Introduction to PDK | [Chapter_01_PDK.md](THEORY/Chapter_01_PDK.md) |
+| 02 | SKY130 Overview | [Chapter_02_SKY130.md](THEORY/Chapter_02_SKY130.md) |
+| 03 | Why SKY130 | [Chapter_03_Why_SKY130.md](THEORY/Chapter_03_Why_SKY130.md) |
+| 04 | Libraries | [Chapter_04_Libraries.md](THEORY/Chapter_04_Libraries.md) |
+| 05 | Layers | [Chapter_05_Layers.md](THEORY/Chapter_05_Layers.md) |
+| 06 | EDA Tools | [Chapter_06_EDA_Tools.md](THEORY/Chapter_06_EDA_Tools.md) |
+| 07 | Installation | [Chapter_07_Installation.md](LAB/Chapter_07_Installation.md) |
+| 08 | Tool Verification | [Chapter_08_Tool_Verification.md](LAB/Chapter_08_Tool_Verification.md) |
+| 09 | Inverter | [Chapter_09_Inverter.md](LAB/Chapter_09_Inverter.md) |
+| 10 | Pre-Layout | [Chapter_10_Pre_Layout.md](LAB/Chapter_10_Pre_Layout.md) |
+| 11 | Magic Layout | [Chapter_11_Magic_Layout.md](LAB/Chapter_11_Magic_Layout.md) |
+| 12 | DRC | [Chapter_12_DRC.md](LAB/Chapter_12_DRC.md) |
+| 13 | LVS | [Chapter_13_LVS.md](LAB/Chapter_13_LVS.md) |
 
 ## Introduction
 
@@ -392,39 +392,39 @@ Execute the following commands in the Ubuntu terminal.
 ```bash
 xschem --version
 ```
-![Image]()
+![Image](https://github.com/Indhumuraliraj/Screening/blob/main/Screenshort/xschme.png)
 ### Ngspice
 
 ```bash
 ngspice --version
 ```
-![Image]()
+![Image](https://github.com/Indhumuraliraj/Screening/blob/main/Screenshort/ngspice.png)
 
 ### Magic
 
 ```bash
 magic --version
 ```
-![Image]()
+![Image](https://github.com/Indhumuraliraj/Screening/blob/main/Screenshort/magic.png)
 ### Netgen
 
 ```bash
 netgen -batch
 ```
-![Image]()
+![Image](https://github.com/Indhumuraliraj/Screening/blob/main/Screenshort/netgen.png)
 ### KLayout
 
 ```bash
 klayout -v
 ```
-![Image]()
+![Image](https://github.com/Indhumuraliraj/Screening/blob/main/Screenshort/klayout.png)
 ## 8.3 PDK Verification
 
 ```bash
 echo $PDK_ROOT
 echo $PDK
 ```
-![Image]()
+![Image](https://github.com/Indhumuraliraj/Screening/blob/main/Screenshort/pdk.png)
 Check whether the required SKY130 technology files are available.
 
 ## 8.4 Observation
@@ -503,10 +503,10 @@ To verify the electrical functionality of the CMOS inverter before physical layo
 6. Connect the output node.
 7. Generate the SPICE netlist.
 
-![Xschem Inverter Schematic]()
+![Xschem Inverter Schematic](https://github.com/Indhumuraliraj/Screening/blob/main/Screenshort/schematic.png)
 
 ## 10.3 Symbol by Schematic
-![Xschem Inverter Schematic]()
+![Xschem Inverter Schematic](https://github.com/Indhumuraliraj/Screening/blob/main/Screenshort/symbol.png)
 ## 10.4 Netlist Generation
 
 Generate the SPICE netlist from the completed schematic.
@@ -516,7 +516,7 @@ The generated netlist contains the transistor connections, model references and 
 ## 10.5 Simulation Using Ngspice
 
 
-![Ngspice Simulation Waveform]()
+![Ngspice Simulation Waveform](https://github.com/Indhumuraliraj/Screening/blob/main/Screenshort/waveform.png)
 
 ## 10.6 Observation
 
@@ -551,7 +551,7 @@ It includes transistor regions, wells, contacts, interconnections and metal rout
 9. Connect power and ground.
 10. Save the layout.
 
-![CMOS Inverter Layout]()
+![CMOS Inverter Layout](https://github.com/Indhumuraliraj/Screening/blob/main/Screenshort/layout.png)
 
 ## 11.4 Observation
 
@@ -596,7 +596,7 @@ drc check
 drc count
 ```
 
-![Magic DRC Results]()
+![Magic DRC Results](https://github.com/Indhumuraliraj/Screening/blob/main/Screenshort/DRC.png)
 
 ## 12.5 Observation
 
@@ -651,9 +651,7 @@ netgen -batch lvs \
 lvs_report.txt
 ```
 
-Replace the example paths and cell names with the actual locations and names used in your project.
-
-![Netgen LVS Results]()
+![Netgen LVS Results](https://github.com/Indhumuraliraj/Screening/blob/main/Screenshort/LVS.png)
 
 ## 13.6 Observation
 
